@@ -8,13 +8,14 @@ android {
 
     defaultConfig {
         applicationId = "com.example.mycanteenapp"
-        minSdk = 21
+        minSdk = 23       // ← change 21 -> 23
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+
 
     buildTypes {
         release {
