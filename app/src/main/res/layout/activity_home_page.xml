@@ -43,28 +43,29 @@
         app:layout_constraintVertical_bias="0.52"
         app:srcCompat="@drawable/screenshot__85_" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="309dp"
-        android:layout_height="163dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.647"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.683"
-        app:srcCompat="@drawable/whatsapp_image_2025_12_13_at_12_08_35_am" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="252dp"
-        android:layout_height="79dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.584"
+    <Button
+        android:id="@+id/btnOrderSnack"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Order Snack"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762"
-        app:srcCompat="@drawable/whatsapp_image_2025_12_13_at_12_08_36_am" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"/>
 
+    <Button
+        android:id="@+id/btnOwner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="I am Cinema Owner"
+        app:layout_constraintTop_toBottomOf="@id/btnOrderSnack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#B10808"/>
+    
 </androidx.constraintlayout.widget.ConstraintLayout>

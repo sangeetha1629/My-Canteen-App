@@ -1,27 +1,28 @@
 package com.example.mycanteenapp;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-
-import androidx.activity.EdgeToEdge;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class HomePage extends AppCompatActivity {
+
+    Button btnOrderSnack, btnOwner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home_page);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        btnOrderSnack = findViewById(R.id.btnOrderSnack);
+        btnOwner = findViewById(R.id.btnOwner);
+
+        btnOrderSnack.setOnClickListener(v -> {
+            startActivity(new Intent(HomePage.this, customeractivity.class));
+        });
+
+        btnOwner.setOnClickListener(v -> {
+            startActivity(new Intent(HomePage.this, owneractivity.class));
         });
     }
-
-
-    }
+}

@@ -11,25 +11,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCanteenApp">
+
+        <!-- HOME PAGE (FIRST SCREEN) -->
         <activity
             android:name=".HomePage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- CUSTOMER PAGE -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.MyCanteenApp">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:name=".customeractivity"
+            android:exported="false" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <!-- OWNER PAGE -->
+        <activity
+            android:name=".owneractivity"
+            android:exported="false" />
+
+        <!-- MAIN ACTIVITY (NORMAL ACTIVITY, NOT LAUNCHER) -->
+
     </application>
 
 </manifest>
