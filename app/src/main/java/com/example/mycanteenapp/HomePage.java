@@ -17,12 +17,6 @@ public class HomePage extends AppCompatActivity {
         btnOrderSnack = findViewById(R.id.btnOrderSnack);
         btnOwner = findViewById(R.id.btnOwner);
 
-        btnOrderSnack.setOnClickListener(v -> {
-            startActivity(new Intent(HomePage.this, customeractivity.class));
-        });
 
-        btnOwner.setOnClickListener(v -> {
-            startActivity(new Intent(HomePage.this, owneractivity.class));
-        });
     }
 }

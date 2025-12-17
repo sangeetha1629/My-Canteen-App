@@ -22,17 +22,6 @@
             </intent-filter>
         </activity>
 
-        <!-- CUSTOMER PAGE -->
-        <activity
-            android:name=".customeractivity"
-            android:exported="false" />
-
-        <!-- OWNER PAGE -->
-        <activity
-            android:name=".owneractivity"
-            android:exported="false" />
-
-        <!-- MAIN ACTIVITY (NORMAL ACTIVITY, NOT LAUNCHER) -->
 
     </application>
 
