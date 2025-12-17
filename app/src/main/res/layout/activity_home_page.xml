@@ -31,41 +31,54 @@
         app:layout_constraintVertical_bias="0.066"
         app:srcCompat="@drawable/st1" />
 
+    <!-- MOVING / ANIMATED TEXT -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="390dp"
         android:layout_height="59dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52"
         app:srcCompat="@drawable/screenshot__85_" />
 
+    <TextView
+        android:id="@+id/gpltext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp" />
 
     <Button
         android:id="@+id/btnOrderSnack"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/white"
         android:text="Order Snack"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp"
         android:textColor="@color/black"
-        android:backgroundTint="@color/white"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
 
     <Button
         android:id="@+id/btnOwner"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#B10808"
         android:text="I am Cinema Owner"
-        app:layout_constraintTop_toBottomOf="@id/btnOrderSnack"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="15dp"
         android:textColor="@color/white"
-        android:backgroundTint="#B10808"/>
-    
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnOrderSnack" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
